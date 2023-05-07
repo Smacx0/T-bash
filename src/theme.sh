@@ -45,9 +45,9 @@ set_tbash_prompt(){
 	# TBASH_PATH=$(dirname $BASH_SOURCE);
 	TBASH_VCS_BRANCH=$(git-branch || hg-branch);
 
-	local word=$(echo $PS1 | egrep -o $TBASH_WORD_REGEX);
+	local virtual_env=$(echo $PS1 | egrep -o $TBASH_PYTHON_VIRTUAL_ENV_REGEX);
 
-	local prompt=$(_tbash_prompt_theme ${TBASH_VCS_BRANCH:-''} $word);
+	local prompt=$(_tbash_prompt_theme ${TBASH_VCS_BRANCH:-''} $virtual_env);
 
 	PS1="$prompt ";
 }

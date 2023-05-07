@@ -26,7 +26,7 @@ TBASH_PROMPT_SYMBOL='';
 TBASH_PATH='';
 TBASH_VCS_NAME='';
 TBASH_VCS_BRANCH='';
-TBASH_WORD_REGEX='\(\w+\)';
+TBASH_PYTHON_VIRTUAL_ENV_REGEX='\(\w+\)';
 
 
 # supporting cli commands
