@@ -28,7 +28,7 @@ tbashcli(){
             ;;
         -h | --help | help)
             echo "Available commands:-";
-            echo -e "* show-hg\t* show-git\t* hide-hg\t* hide-git\t* set-theme\t* set-prompt\t* colours";
+            echo -e "* show-hg\t* show-git\t* hide-hg\t* hide-git\t* set-theme\t* set-prompt-symbol\t* colours";
             ;;
         * )
             echo "usage: tbashcli set-theme 1";

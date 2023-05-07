@@ -47,7 +47,7 @@ set_tbash_prompt(){
 
 	local word=$(echo $PS1 | egrep -o $TBASH_WORD_REGEX);
 
-	local prompt=$(_tbash_prompt_theme $TBASH_VCS_BRANCH $word);
+	local prompt=$(_tbash_prompt_theme ${TBASH_VCS_BRANCH:-''} $word);
 
 	PS1="$prompt ";
 }
